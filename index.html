@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluent — English Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-icon">f</span> fluent<span class="dot">.</span></a>
+      <p class="section-label">YOUR SPACE</p>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="active" data-page="Practice"><span>◉</span>Practice</button>
+        <button data-page="Lessons"><span>▤</span>Lessons</button>
+        <button data-page="Vocabulary"><span>⌕</span>Vocabulary</button>
+        <button data-page="My progress"><span>↗</span>My progress</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <section class="streak"><strong>🔥 &nbsp; 5 day streak</strong><p>You're building a great habit!</p><div class="days"><span>✓<small>M</small></span><span>✓<small>T</small></span><span>✓<small>W</small></span><span>✓<small>T</small></span><span>✓<small>F</small></span><span>·<small>S</small></span><span>·<small>S</small></span></div></section>
+        <div class="profile"><span class="avatar">A</span><span><strong>Alex Morgan</strong><small>English learner · A2</small></span></div>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar"><div class="breadcrumb">Your space &nbsp;›&nbsp; <strong id="crumb">Practice</strong></div><span class="level">✦ &nbsp; Beginner · A2</span></header>
+      <div class="content">
+        <div class="welcome"><div><p class="eyebrow">YOUR DAILY PRACTICE</p><h1 id="heading">Let’s get talking.</h1><p class="subtitle" id="subtitle">A little English every day goes a long way.</p></div><time id="date"></time></div>
+        <div class="layout">
+          <section class="chat card">
+            <div class="chat-header"><div class="tutor"><span class="tutor-icon">✦</span><span><strong>Mia <em>· your AI tutor</em></strong><small>Patient, friendly, and here to help</small></span></div><span class="topic" id="topic">☕ &nbsp; Casual conversation</span></div>
+            <div class="messages" id="messages" aria-live="polite">
+              <div class="message ai"><span class="mini-avatar">✦</span><div><div class="bubble">Hi Alex! 👋 Let’s practice a little English. What did you do this weekend?</div><small class="time">Mia · just now</small></div></div>
+              <div class="message user"><span class="mini-avatar">A</span><div><div class="bubble">I go to the park with my friend.</div><div class="correction">✨ Nice! A more natural way: <strong>“I went to the park with my friend.”</strong><br>Use “went” for something that happened in the past.</div></div></div>
+              <div class="message ai"><span class="mini-avatar">✦</span><div><div class="bubble">That sounds lovely! What did you do at the park? 🌿</div><small class="time">Mia · just now</small></div></div>
+              <div class="suggestions"><button>We had a picnic</button><button>We went for a walk</button><button>Help me answer</button></div>
+            </div>
+            <form class="composer" id="chat-form"><div class="input-row"><input id="message-input" placeholder="Type your answer in English…" autocomplete="off" aria-label="Your message"><button type="button" class="mic" id="mic-button" aria-label="Voice input" title="Voice input">⌁</button><button class="send" type="submit" aria-label="Send message">↑</button></div><div class="hint"><span>Don’t worry about mistakes — that’s how you learn.</span><span>↵ send</span></div></form>
+          </section>
+          <div class="right-column">
+            <section class="lesson card"><div class="card-title">Today’s mini lesson <button>See all →</button></div><div class="lesson-art"><small>SPEAKING · 5 MIN</small><h2>At the coffee shop</h2><span class="coffee">☕</span></div><div class="lesson-meta"><span>☼ &nbsp; Beginner</span><strong>5 new phrases</strong></div><button class="start-button" id="lesson-button">Start lesson &nbsp; →</button></section>
+            <section class="goal card"><div class="card-title">Weekly goal <span>3 of 5 days</span></div><div class="progress"><span></span></div><div class="goal-meta"><span>Keep it up!</span><strong>60%</strong></div></section>
+            <section class="word card"><small>WORD OF THE DAY</small><h2>Delightful</h2><em>/dɪˈlaɪt.fəl/ · adjective</em><p>Very pleasant or enjoyable.<br><span>“We had a delightful afternoon.”</span></p><button id="save-word">＋ &nbsp; Add to my words</button></section>
+          </div>
+        </div>
+        <p class="footer-note">Made for your pace. Keep showing up and you’ll get there. 🌱</p>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
